@@ -35,11 +35,16 @@ class CountryAdapter(var countries: List<Country>) :
         RecyclerView.ViewHolder(binding.root) {
 
         fun bind(country: Country) {
-            binding.countryName.text = "Country Name: ${country.name.common}"
-            binding.region.text = "Region: ${country.region}"
-            binding.subregion.text = "${country.subregion}"
-            binding.area.text = "Area: ${country.area.toString()}"
-            binding.population.text = "Population: ${country.population.toString()}"
+
+            with(binding){
+                countryName.text = "Country Name: ${country.name.common}"
+                region.text = "Region: ${country.region}"
+                subregion.text = "${country.subregion}"
+                area.text = "Area: ${country.area.toString()}"
+                population.text = "Population: ${country.population.toString()}"
+            }
+
+
 
             Glide.with(binding.root)
                 .load(country.flags.png)
