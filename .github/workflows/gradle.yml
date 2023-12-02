@@ -21,7 +21,14 @@ jobs:
         java-version: '17'
         distribution: 'adopt'
 
-    
+    - name: Find Gradle wrapper
+      run: |
+        find . -type f -name "gradlew"
+        find . -type f -name "gradlew.bat"
+
+    - name: Make gradlew executable
+      run: chmod +x ./gradlew
+
    
     - name: Build with Gradle
       run: ./gradlew build
