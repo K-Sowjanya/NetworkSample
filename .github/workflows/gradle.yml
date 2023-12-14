@@ -27,7 +27,7 @@ jobs:
    
 
       - name: Generate apk
-        run: gradlew build
+        run: ./gradlew assembleRelease
           
       - name: Upload a Build Artifact
         uses: actions/upload-artifact@v1
