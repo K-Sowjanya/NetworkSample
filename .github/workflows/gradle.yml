@@ -33,5 +33,5 @@ jobs:
         uses: actions/upload-artifact@v3
 
         with:
-          name: app-release
+          name: Network Sample
           path: app/apks/app-release.apk
