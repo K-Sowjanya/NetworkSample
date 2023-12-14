@@ -36,4 +36,5 @@ jobs:
 
        with:
           name: Network Sample
-          path: app/apks/app-release.apk
+          path: app/build/outputs/apk/debug/app-release.apk
+          
