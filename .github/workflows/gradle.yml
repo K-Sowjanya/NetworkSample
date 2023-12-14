@@ -27,9 +27,9 @@ jobs:
           gradle-version: 6.5
 
       - name: Generate apk
-        run: |
-          cd /home/runner/work/NetworkSample/
+        run:
           ./gradlew assembleRelease --stacktrace
+          
       - name: Upload a Build Artifact
         uses: actions/upload-artifact@v1
 
