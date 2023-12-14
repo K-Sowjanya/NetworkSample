@@ -30,7 +30,7 @@ jobs:
         run: ./gradlew assembleRelease
 
       - name: Upload a Build Artifact
-        uses: actions/upload-artifact@v2.1.1
+        uses: actions/upload-artifact@v3
 
         with:
           name: app-release
