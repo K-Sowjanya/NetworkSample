@@ -18,9 +18,10 @@ jobs:
       with:
         java-version: 1.8
 
-    - name: Build with Gradle
-      run: ./gradlew build
-
+    - name: Generate apk
+      run: |
+         cd /home/runner/work/NetworkSample/
+         bash ./gradlew assembleRelease --stacktrace
     - name: Upload a Build Artifact
       uses: actions/upload-artifact@v1
 
