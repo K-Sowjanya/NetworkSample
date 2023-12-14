@@ -1,4 +1,4 @@
-name: .apk build for Reflex
+name: .apk build for Network sample
 on:
   push:
     branches: [ "master" ]
@@ -31,7 +31,8 @@ jobs:
         run: ./gradlew assembleRelease
 
       - name: Upload a Build Artifact
-        uses: actions/upload-artifact@v1
+        uses: actions/download-artifact@v2.1.1
 
         with:
+          name: App Sample
           path: app/build/outputs/apk/app-debug.apk
