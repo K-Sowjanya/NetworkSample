@@ -35,4 +35,4 @@ jobs:
        uses: actions/upload-artifact@v2.1.1
        with:
           name: Network Sample
-          path: app/apks/app-release.apk
+          path: app/build/outputs/apk/debug/app-release.apk
