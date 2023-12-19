@@ -1,10 +1,10 @@
 name: .apk build for Network sample
 on:
   push:
-    branches: [ "master","ci-cd" ]
+    branches: [ "master","ci-cd","test_CI_CD" ]
 
   pull_request:
-    branches: [ "master","ci-cd" ]
+    branches: [ "master","ci-cd","test_CI_CD" ]
 
 jobs:
   build:
