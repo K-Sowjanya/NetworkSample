@@ -23,6 +23,7 @@ class CountryViewModel : ViewModel() {
     private val _error = MutableLiveData<String>()
     val error:LiveData<String> = _error
 
+
     fun fetchCountries() {
         viewModelScope.launch {
             _loading.value = true
